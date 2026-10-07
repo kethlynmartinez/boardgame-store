@@ -1,0 +1,54 @@
+/* Card com cada roupa. */
+.card{
+    width: 200px;
+    position: relative;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0px;
+    margin: 10px;
+}
+
+/* Foto da roupa dentro do card. */
+.foto {
+    width: 100%; /* Ocupa toda a largura do card. */
+}
+
+/* Parágrafo com o preço da roupa dentro do card. */
+.preco {
+    font-weight: bold;
+    font-size: 1.2em; /* A unidade "em" tem relação com o tamanho do texto. 
+                         A medida aqui manda o texto ficar 20% maior do que o 
+                         normal na página. */
+}
+
+/* Botão "Adicionar ao carrinho "*/
+.botao {
+    display: block; /* Faz o botão ser tratado como elemento de bloco. */
+    color: white;
+    font-weight: bold;
+    margin: auto; /* Centraliza o botão dentro do div */
+    margin-top: 10px;
+    background-color: rgb(96, 10, 10);
+    border-radius: 10px; /* Bordas arredondadas. */
+    padding: 5px;
+    cursor: pointer; /* Faz o cursor do mouse aparecer como a mãozinha apontando. */
+}
+
+/* Marca que aparece nos produtos em oferta. */
+.oferta {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+    font-size: 0.8em;
+}

@@ -1,0 +1,46 @@
+#painel-carrinho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1000;
+}
+
+#painel-carrinho h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#painel-carrinho table {
+    width: calc(100% - 100px);
+    margin: auto;
+}
+
+#painel-carrinho table thead, tfoot {
+    background-color: lightgray;
+}
+
+#painel-carrinho table th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+#painel-carrinho table input {
+    padding: 5px;
+}
+
+#painel-carrinho button {
+    display: block;
+    width: fit-content;
+    padding: 10px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgb(81, 0, 7);
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}

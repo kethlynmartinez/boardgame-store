@@ -1,0 +1,20 @@
+/* Cabeçalho no alto da página. */
+.cabecalhoLoja {
+    display: grid;
+    height: 80px;
+    background-color: rgba(105, 0, 0, 0.878);
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+/* Imagem do logotipo da loja */
+.logotipo {
+    height: 80px;
+    margin-left: 30px;
+}
+
+/* Div que contém o campo de pesquisa e o ícone do carrinho. */
+.controles {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}

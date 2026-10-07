@@ -1,0 +1,10 @@
+/* Campo de pesquisa no alto da página. */
+.campoDePesquisa {
+    padding: 5px;
+    padding-left: 40px; /* Importante esse espaço para que o texto digitado não fique sobre a lupa. */
+    border-radius: 8px;
+    background-image: url('lupa.png'); /* Imagem da lupa que aparece no canto do input. */
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 20px; /* Tamanho da lupa no input. */
+}

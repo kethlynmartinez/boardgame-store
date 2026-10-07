@@ -1,0 +1,7 @@
+/* Main com os cards. */
+.painel {
+    display: flex;
+    flex-wrap: wrap; /* "Quebra linha" de cards com não há espaço na linha. */
+    justify-content: center; /* Centraliza a lista de cards na página. */
+    padding: 50px;
+}
