@@ -1,25 +1,46 @@
-# Loja
+# Loja de Boardgames
 
-Loja de jogos de tabuleiro feita em React, com busca de produtos e carrinho de compras.
+Vitrine de jogos de tabuleiro feita com React. A pessoa vê os jogos, pesquisa por nome, adiciona ao carrinho e consulta o total da compra.
 
-Projeto iniciado como exercício de curso e expandido por conta própria.
+Projeto de curso, desenvolvido na disciplina de Front-end.
 
-## O que tem
+Site publicado: adicione aqui o endereço do GitHub Pages.
 
-- Catálogo de produtos com busca
-- Carrinho com contagem de itens por produto
-- Estado global com Context API
-- Componentes isolados com CSS Modules
+## O que o projeto faz
 
-## Como rodar
+- Lista 10 jogos com foto, nome, preço e selo de oferta.
+- Pesquisa por nome enquanto a pessoa digita.
+- Adiciona jogos ao carrinho. Se o jogo já está no carrinho, aumenta a quantidade.
+- Mostra o carrinho com quantidade, subtotal e total.
 
-```bash
+## Tecnologias
+
+React 19, Context API, CSS Modules e Create React App.
+
+## Como funciona o código
+
+- `src/ContextoApp.js` guarda a lista de produtos e o carrinho. O carrinho é atualizado sem alterar o estado diretamente.
+- `src/componentes` tem um componente por pasta: cabeçalho, campo de pesquisa, card, painel de roupas, ícone e painel do carrinho.
+- Os dados dos jogos ficam em `src/componentes/Produtos/Produtos.js`.
+
+## Como rodar no seu computador
+
+Instale o Node.js e rode, dentro da pasta do projeto:
+
+```
 npm install
 npm start
 ```
 
-O projeto abre em http://localhost:3000.
+O site abre em http://localhost:3000.
 
-## Stack
+Para gerar a versão final: `npm run build`.
 
-React, Context API, CSS Modules
+## Publicação
+
+O arquivo `.github/workflows/deploy.yml` publica o site no GitHub Pages a cada alteração na branch `main`. Para ativar, vá em Settings, Pages, e escolha GitHub Actions como fonte.
+
+## Limitações
+
+- Não há finalização de compra nem servidor. O carrinho existe apenas enquanto a página está aberta.
+- Os produtos vêm de uma lista fixa no código.

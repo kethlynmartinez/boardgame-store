@@ -27,11 +27,13 @@ function PainelCarrinho(props) {
             <h1>Seu Carrinho</h1>
             <table>
                 <thead>
-                    <th>#</th>
-                    <th>Produto</th>
-                    <th>Preço</th>
-                    <th>Quantidade</th>
-                    <th>Subtotal</th>
+                    <tr>
+                        <th>#</th>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th>Subtotal</th>
+                    </tr>
                 </thead>
                 <tbody id="conteudo-carrinho">
                     { 
@@ -47,11 +49,13 @@ function PainelCarrinho(props) {
                     }
                 </tbody>
                 <tfoot>
-                    <th>&nbsp;</th>
-                    <th>&nbsp;</th>
-                    <th>&nbsp;</th>
-                    <th>TOTAL</th>
-                    <th id="total-compra">{calculaTotalCarrinho().toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</th>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th>&nbsp;</th>
+                        <th>&nbsp;</th>
+                        <th>TOTAL</th>
+                        <th id="total-compra">{calculaTotalCarrinho().toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</th>
+                    </tr>
                 </tfoot>
             </table>
             <button id="btn-fechar" onClick={() => props.aoFechar()}>Fechar</button>
