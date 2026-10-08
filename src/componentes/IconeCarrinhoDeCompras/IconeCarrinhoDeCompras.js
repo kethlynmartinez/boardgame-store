@@ -12,12 +12,15 @@ import { useProdutos } from "../../ContextoApp.js"; // Acessa a função para ac
 // de compras. 
 function IconeCarrinhoDeCompras(props) {
     const { carrinho } = useProdutos(); // Obtém o carrinho de compras do contexto global.
-    
-    // Retorna o código JSX do componente. 
+
+    // Soma as quantidades de todos os itens (total de unidades, não de produtos diferentes).
+    const totalUnidades = carrinho.reduce((soma, item) => soma + item.quantidade, 0);
+
+    // Retorna o código JSX do componente.
     return (
         <div className={styles.container}>
             <img className={styles.icone} alt="Imagem do carrinho de compras" src={iconeCarrinho} onClick={props.aoClicarCarrinho}/>
-            <span className={styles.contagem}>{carrinho.length}</span>
+            <span className={styles.contagem}>{totalUnidades}</span>
         </div>
     );
 }
