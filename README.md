@@ -4,7 +4,7 @@ Vitrine de jogos de tabuleiro feita com React. A pessoa vê os jogos, pesquisa p
 
 Projeto de curso, desenvolvido na disciplina de Front-end.
 
-Site publicado: adicione aqui o endereço do GitHub Pages.
+Site publicado: https://kethlynmartinez.github.io/loja/
 
 ## O que o projeto faz
 
